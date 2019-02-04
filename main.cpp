@@ -41,7 +41,7 @@ void u_bfs(vector<pair<int,int>> edges, int h_1){
                         layer.push_back(v.second);
                         cycle = true;
                     }
-                    if ((v.second == i) && !nodes.at(v.first)) {
+                   else if ((v.second == i) && !nodes.at(v.first)) {
                         layer.push_back(v.first);
                         cycle = true;
                     }
